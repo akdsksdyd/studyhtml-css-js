@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{padding: 0; margin: 0;}
+
+        .list{
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+        }
+
+        .content{
+            /* 
+            부모 영역에 relative를 사용 하지 않으면 body기준으로
+            body 안에서 움직 일 수 있기 때문에, 
+            혼자 동 떨어진 상태가 될 수 있는데,
+            부모 영역에 relative를 사용해서 content영역 안에서만
+            움직 일 수 있게 해준다.
+            */
+            position: relative; 
+        }
+
+        p {
+            height: 100px;
+        }
+
+        .item1{
+            background-color: aqua;
+        }
+        .item2{
+            background-color: red;
+            /* 
+            html태그는 3D형태를 나타내기 때문에 item2는 z축으로 나온 것이다. 
+            item3는 그 뒤에 있는 것.
+            body기준으로 올라옴.
+            포지션을 적용하면 top, bottom중 1개, left, right중 1개를 선택 해 위치조정
+            */
+            position: absolute; 
+            top: 10px;/* 위치조정 */
+            left: 30px;
+            width: 50px;/* 크기조정 */
+            height: 50px;
+        }
+        .item3{
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="list">
+
+        <div class="content">
+
+            <p class="item1">포지션</p>
+            <p class="item2">포지션</p>
+            <p class="item3">포지션</p>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

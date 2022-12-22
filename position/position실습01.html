@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{padding: 0; margin: 0; list-style: none;}
+
+        .wrap{
+            border: 1px solid #777;
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .wrap-img{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .wrap-img img{
+            width: 50px;
+        }
+
+        .wrap-content{
+            padding-left: 60px;
+            box-sizing: border-box;
+            overflow: hidden;
+            resize: verticla;
+        }
+
+        .wrap-content textarea{
+            width: 100%;
+            height: 150px;
+            box-sizing: border-box;
+        }
+
+        .wrap-content .left{float: left;}
+        .wrap-content .right{float: right;}
+
+        .left input{display: block;}
+
+        .content{
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .content img{
+            position: absolute;
+            width: 50px;
+        }
+
+        .content2{
+            float: left;
+            padding-left: 60px;
+        }
+
+        .content .btn{
+            float: right;
+            font-size: 10px;
+            margin: 2px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap"><!-- margin: 0 auto -->
+
+        <div class="wrap-img"><!-- 포지션 -->
+
+            <img src="/img/bgimg.png" alt="이미지">
+        
+        </div>
+        
+        <div class="wrap-content">
+
+            <textarea></textarea>
+
+            <div class="left">
+
+                <input type="text">
+                <input type="text">
+                
+            </div>
+
+            <button type="button" class="right">등록</button>
+
+        </div>
+
+    </div>
+
+    <div class="wrap">
+
+        <div class="content">
+
+            <img src="/img/bgimg.png" alt="이미지2">
+           
+            <div class="content2">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
+
+            <button type="button" class="btn">삭제</button>
+            <button type="button" class="btn">수정</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

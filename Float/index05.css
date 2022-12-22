@@ -1,0 +1,75 @@
+* {padding: 0; margin: 0; list-style: none; box-sizing: border-box;}
+
+.wrap {
+    width: 1020px;
+    margin: 0 auto;
+}
+.conts {
+    overflow: hidden;
+}
+.conts .list_wrap {width: 480px; float: left; border: 1px solid #777;}
+.conts .slide_wrap {
+    width: 236px; 
+    float: left; 
+    border: 1px solid #777; 
+    height: 310px;
+    margin-left: 8px;
+}
+.conts .user_wrap {
+    width: 280px; 
+    float: left; border: 1px;
+    margin-left: 8px;
+}
+
+.conts .list_wrap ul {overflow: hidden;}
+.conts .list_wrap ul li {
+    float: left; 
+    width: 33.3333%; 
+    height: 155px; 
+    border: 1px solid #777;
+    box-sizing: border-box;
+}
+
+.user_wrap .login_wrap {
+    border: 1px solid #777;
+    height: 147px; 
+    margin-bottom: 8px;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.login_wrap .top{
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.login_wrap .left{
+    float: left;
+    font-size: 13px;
+    color: #555;
+}
+
+.login_wrap .right{
+    float: right;
+    font-size: 13px;
+    color: #555;
+}
+
+.login_wrap .btn{
+    background-color: #00d344;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+.user_wrap .promo_wrap {
+    border: 1px solid #777; 
+    height: 155px; 
+}
+
+
+

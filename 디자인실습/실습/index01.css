@@ -1,0 +1,87 @@
+
+* {padding: 0; margin: 0;}
+
+body{background-image: url('img/bg.png');}
+
+ul li{list-style: none;}
+
+.logo{
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img{
+    width: 200px;
+}
+
+nav ul{
+    background-color: #000;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-weight: 1000;
+}
+
+.item{
+    background-color: #fff;
+}
+
+.item ul{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.item ul li{
+    text-align: center;
+    width: 25%;
+    margin: 40px 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+.ipad{
+    margin: 0 auto;
+    width: 700px;
+    position: relative;
+}
+
+.ipad .sidel{
+    float: left;
+    position: absolute;
+    top: 0;
+    left: -225px;
+}
+
+
+.ipad .sider{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: -225px;
+}
+
+.top{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+}
+
+.top a{
+    text-decoration: none;
+    color: #fff;
+}

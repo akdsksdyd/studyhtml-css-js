@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{padding: 0; margin: 0; list-style: none;}
+
+        section{
+            /* 
+            원래 section의 높이는 자동으로 내용에 맞춰서 커지기 때문에 
+            지정을 안하지만 예시를 보여주기 위해 설정.
+            */
+            height: 2000px;
+            background-color: aqua;
+            margin-top: 150px;
+        }
+
+        header{
+            /* 
+            헤더를 fixed했기 때문에 스크롤을 올리거나 내려도 지정된
+            위치에 z축에 고정되서 보여짐.
+            그 아래에 있는 내용들은 그 뒤로 올라 온 것.
+            */
+            position: fixed;
+            background-color: #fff;
+            left: 0;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 5;
+        }
+
+        .menu ul{
+            background-color: #000;
+        }
+
+        .menu ul li{
+            display: inline;
+        }
+
+        .menu ul li a{
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .side{
+            position: fixed;
+            right: 0px;
+            bottom: 200px;
+            /* 
+            포지션이 겹치는 경우 z축의 우선순위 지정
+            보통 1~10 사잇값.
+            */
+            z-index: 10;
+            background-color: #282828;
+        }
+
+        .side ul li{
+            display: inline;
+        }
+
+        .side ul li a{
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 100px;
+            border-top: 1px solid #777;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div>
+
+            <img src="/img/bgimg.png" alt="로고">
+
+        </div>
+
+        <nav class="menu">
+
+            <ul>
+
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <aside class="side">
+
+        <ul>
+
+            <li><a href="#">카톡</a></li>
+            <li><a href="#">전화번호</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+
+        </ul>
+
+    </aside>
+
+    <section>
+
+        내용..
+
+    </section>
+
+</body>
+</html>

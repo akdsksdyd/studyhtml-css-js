@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {padding: 0; margin: 0;}
+
+        .inner1{
+            height: 200px;
+            background-color: yellow;
+        }
+
+        .inner2{
+            background-color: red;
+            /* 
+                1. sticky는 top, bottom, left, right중 필수로 하나를 설정 해야함.
+                2. 부모태그의 overflow 속성이 있을 땐 동작x
+                3. top속성에 fixed되는 지점을 기록하면 된다.
+            */
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        .inner3{
+            height: 2000px;
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <section>
+
+        <div class="inner1">
+
+            내용..
+
+        </div>
+
+        <aside class="inner2">
+
+            sticky는 특정 높이 전 까지는 고정으로 있다가, 
+            특정 높이 도달하면 fixed되는 속성
+
+        </aside>
+
+        <div class="inner3">
+
+            내용..
+
+        </div>
+
+    </section>
+
+</body>
+</html>
