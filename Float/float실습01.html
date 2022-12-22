@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {padding: 0; margin: 0; list-style: none;}
+
+        .box{
+            border: 1px solid #777;
+            width: 800px;
+            
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        .box .innerL {
+            float: left;
+            width: 50%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .box .innerR {
+            float: left;
+            width: 50%;
+            height: 100%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+        .right p{
+            padding-bottom: 50px;
+        }
+
+        .right .r_d1 {
+            border: 2px solid #777;
+            overflow: hidden;
+        }
+
+        .r_d1_left{float: left;}
+        .r_d1_right{float: right;}
+
+        .r_d2{
+            border: 2px solid #777;
+            overflow: hidden;
+            background-color: cornsilk;
+        }
+
+        .r_d2_left{
+            float: left;
+            width: 50%;
+            text-align: center;
+            border: 1px solid #777;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+   <div class="box">
+
+        <div class="innerL">
+            사진
+        </div>
+
+        <div class="innerR">
+
+            <div class="right">
+
+                <h4>제목 : 패딩바텀 50px;</h4>
+                <p>내용..</p>
+
+                <div class="r_d1">
+
+                    <div class="r_d1_left">
+                        가격
+                    </div>
+                   
+                    <div class="r_d1_right">
+                        10000원
+                    </div>
+
+                </div>
+
+                <div class="r_d2">
+
+                    <div class="r_d2_left">
+                        장바구니
+                    </div>
+
+                    <div class="r_d2_left">
+                        구매하기
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+   </div> 
+
+</body>
+</html>

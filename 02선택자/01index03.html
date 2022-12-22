@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 마우스 닿을 때 */
+        .list > ul > li > a:hover {background-color: aquamarine;}
+
+        /* input에 포커스 될 때 */
+        .inner input:focus {background-color: aqua;}
+
+        /* 눌렀을 때 */
+        .title p:active {background-color: aqua;}
+    </style>
+
+</head>
+<body>
+    
+    <!-- 
+        가상 선택자
+        -반응 선택자
+        > :active - 사용자가 마우스로 클릭한 태그를 선택
+        > :hover - 사용자가 마우스를 올린 태그를 선택
+        -상태 선택자
+        > :focus - 초점이 맞춰진 input태그를 선택
+        > :checked - 체크 상태의 input태그를 선택
+     -->
+
+     <div class="list">
+        <ul>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+        </ul>
+     </div>
+
+     <div class="inner">
+        <input type="text">
+        <input type="text">
+     </div>
+
+     <div class="title">
+        <p>active</p>
+     </div>
+
+     <!--
+        폰트
+        -font-family : 폰트를 설정 할 수 있다.
+        -font-size : 폰트 크키를 설정 (small, medium, large, %, px 등)
+        -font-style : 폰트 스타일을 설정 (normal, italic(이탈릭체), oblique(기울임꼴) 등 하나 선택 가능.)
+        -font-weight : 폰트의 굵기를 설정
+        -font : font에 관련된 속성을 한 번에 설정 가능.
+    -->
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {padding: 0; margin: 0; list-style: none;}
+
+        .box {
+            /* 
+            float적용 시 부모가 자식을 감싸지 못하는 문제 발생 
+            1. 가상요소방법 적용
+            2. 부모에 overflow:hidden;
+            */
+            border: 1px solid #777;
+            overflow: hidden;
+
+            width: 500px;
+        }
+        /* 1. .box::after{content:""; display: block; clear: both;} */
+        .box li{
+            float: left;
+            width: 20.0000%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <ul class="box">
+        <li>박스1</li>
+        <li>박스2</li>
+        <li>박스3</li>
+        <li>박스4</li>
+        <li>박스5</li>
+    </ul>
+    
+</body>
+</html>

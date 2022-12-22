@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{background-image: url('/img/bg.jpg');}
+        p{
+            width: 300px;
+            height: 100px;
+            border: 1px solid #777;
+            background-color: aqua;
+            /* 
+            padding을 줄 때는 1, 2, 3, 4개씩 따로 줄 수 있다.
+            4개를 따로 주면 시계방향으로 차례대로 적용된다.
+            3개 : 위 좌우 아래
+            2개 : 위아래 좌우
+            1개 : 전부
+            */
+            padding: 10px 20px 30px; 
+
+            box-sizing: border-box; /* 상자의 크기를 border, padding을 제외하고 계산 */
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>
+        박스의 가로 : width + padding + border = 322px;
+    </p>    
+    
+</body>
+</html>

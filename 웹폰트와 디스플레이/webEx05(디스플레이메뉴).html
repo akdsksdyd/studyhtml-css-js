@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {list-style: none; padding: 0; margin: 0;}
+        /* a태그 한테만 text-align을 주면 전부 다 가운데로 몰림. */
+        .nav {text-align: center;}
+        .nav li{display: inline;}
+        /*
+         .nav li a{height: 100px;}  a태그는 inline이기 때문에
+         아무리 값을 넣어도 바뀌지 않음.
+        */
+        .nav li a{
+            display: inline-block;
+            height: 100px;
+            line-height: 100px;
+            width: 100px;
+            text-decoration: none; /* 밑줄제거 */
+        }
+
+        #header *{text-align: center; background-color: black; color: white;}
+        .wrap ul li{display: inline;}
+        .wrap ul li a{
+            display: inline-block;
+            height: 100px;
+            line-height: 100px;
+            width: 100px;
+            text-decoration: none;
+        }
+        #header .wrap ul li a:hover{
+            background-color: brown;
+            color: gold;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <ul class="nav">
+        <!-- 
+            li한테는 inline, a태그에는 inline-block
+         -->
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+    </ul>
+
+    <header id="header">
+        <h3>목록 만들기</h3>
+        <nav class="wrap">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>

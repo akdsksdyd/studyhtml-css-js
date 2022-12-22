@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .list .inner{display: inline;}
+        .list2 span{display: block;}
+        .list3 a{
+                    display: inline-block;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 50px;
+                    text-align: center;
+                }
+        .box {display: none;} /* 숨기기 */
+    </style>
+
+</head>
+<body>
+    
+    <!-- 
+        레이아웃
+        display
+        float
+        position
+
+        display 속성에 적용 가능한 키워드
+        -none : 태그를 화면에서 보이지 않게 만듬.
+        -block : 태그를 block형식으로 지정.
+        -inline : 태그를 inline형식으로 지정.
+        -inline-block(인라인으로 지정하되 블럭성질을 가짐.) : 태그를 inline-block형식으로 지정.
+        인라인-블럭은 박스요소(크기, 너비)를 지정할 수 있다.
+    -->
+
+    <div class="list">
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+    </div>
+
+    <div class="list2">
+        <span>인라인</span>
+        <span>인라인</span>
+        <span>인라인</span>
+    </div>
+
+    <div class="list3">
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+    </div>
+
+    <div class="box">
+        <p>디스플레이 none</p>
+    </div>
+
+</body>
+</html>

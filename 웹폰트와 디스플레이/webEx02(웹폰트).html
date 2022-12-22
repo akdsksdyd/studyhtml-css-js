@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tx {
+            color: red; 
+            letter-spacing: 5px; /* 글자 사이의 간격 */
+            text-align: center; /* 글자 정렬(블럭 요소에만 적용 가능, 인라인 x) */
+        }
+
+        /* 기준이 있을 때 옆에 있는 애 한테 적용됨. */
+        
+        .tx1 img {vertical-align: middle;}
+
+        /* 기준이 되는 요소가 없을 때 수직정렬 */
+        .tx2{
+            border: 2px solid #777;
+            height: 100px;
+            line-height: 100px; /* 줄 간 간격 줄이 여러개 일 땐 x */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- 
+        텍스트 수직, 수평 정렬
+        text-align : 텍스트 수평정렬에 이용. 블록태그만 가능(left, center, right)
+        vertical-align : 나란히 배치된 요소에 적용 해 수직정렬의 기준을 맞춤(top, middle, bottom)
+        
+        한줄 텍스트를 수평 가운데로 보내고 싶을 때, 
+        height와 line-height를 동일하게 맞추면 문단이 수평 가운데 정렬됨.
+    -->
+    
+    <p class="tx">
+        안녕하세요
+    </p>
+
+    <p class="tx1">
+        <img src="/img/css3.png" alt="이미지">
+        버티칼 얼라인
+    </p>
+
+    <p class="tx2">
+        기준이 되는 요소가 없을 때 수직정렬<br>
+        기준이 되는 요소가 없을 때 수직정렬
+    </p>
+
+</body>
+</html>

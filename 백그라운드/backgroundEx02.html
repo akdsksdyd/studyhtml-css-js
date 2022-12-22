@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        header {height: 300px; background-color: aqua;}
+        article {
+            height: 500px; background-image: url('/img/back.jpg');
+            background-attachment: fixed;
+            background-size: contain; /* 백그라운드가 잘리지 않도록 하고, 나머지는 비움 */
+            background-size: cover; /* 빈 공간 없이 채워줌, 나머지는 자름. */
+        }
+        section {height: 100vh; background-color: pink;}
+        footer {height: 300px; background-color: yellow;}
+    </style>
+
+</head>
+<body>
+
+    <header>
+        헤더...
+    </header>  
+    
+    
+    <article>
+        글 영역...
+    </article>
+
+    <section>
+        본문...
+    </section>
+
+    <footer>
+        푸터...
+    </footer>
+    
+</body>
+</html>

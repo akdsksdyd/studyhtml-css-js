@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box{
+            overflow: hidden;
+            border: 1px solid #777;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .box .inner{
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .box .inner p{
+            margin: 0px;
+        }
+
+        .control{
+            margin-top: 50px;
+            border: 1px solid #777;
+        }
+
+        .wrap{border: 1px solid #777;}
+
+        .content{
+            overflow: hidden;
+            border: 1px solid #777;
+        }
+
+        .content .left{
+            float: left;
+        }
+
+        .content .right{
+            float: right;
+        }
+
+        .content button{
+            width: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h3>과제</h3>
+
+    <div class="box">
+        
+        <div class="inner"> <!-- 클래스는 띄어쓰기로 이름을 여러개 만들 수 있다. -->
+            사진
+        </div>
+
+        <div class="inner wrap">
+            
+            <div>
+                <p>제목 : ~~</p>
+                <p>내용 : ~~</p>
+            </div>
+
+            <div class="control">
+                
+                <div class="content">
+                    <span class="left">가격</span>
+                    <span class="right">10000원</span>
+                </div>
+
+                <div class="content">
+                    <button type="button" class="left">구매하기</button>
+                    <button type="button" class="right">장바구니</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
