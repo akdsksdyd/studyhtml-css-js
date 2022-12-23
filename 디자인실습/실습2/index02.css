@@ -11,6 +11,8 @@
     box-sizing: border-box;
 }
 
+img{max-width: 100%; height: auto;}
+
 .title{
     position: absolute;
     left: 20px;
@@ -25,6 +27,7 @@
 
 .main nav ul{
     display: block;
+    overflow: hidden;
 }
 
 .main nav ul li{
@@ -33,21 +36,26 @@
 }
 
 .main nav ul li a{
-    display: block;
+    display: inline-block;
     text-decoration: none;
     padding: 5px 10px;
 }
 
 .top-li1{border-radius: 10px 0 0 10px;}
+.top-li1 a:hover{border-radius: 10px 0 0 10px;}
 .top-li2{border-radius: 0 10px 10px 0;}
+.top-li2 a:hover{border-radius: 0 10px 10px 0;}
 
 .bottom-li1{border-radius: 10px 0 0 10px;}
+.bottom-li1 a:hover{border-radius: 10px 0 0 10px;}
 .bottom-li2{border-radius: 0 10px 10px 0;}
+.bottom-li2 a:hover{border-radius: 0 10px 10px 0;}
 
 .main nav ul li a:hover{
     background-color: #000;
     color: #fff;
 }
+
 
 .main-nav-bottom{
     position: absolute;
@@ -84,7 +92,7 @@
 .side .first{
     overflow: hidden;
 }
-.side .side-first p{
+.side .side-first label{
     display: block;
     float: left;
     width: 100px;
@@ -97,14 +105,32 @@
     color: #fff;
 }
 
-.img ul li{
+.tab-item ul li{
     overflow: hidden;
     border: 1px solid #777;
     padding: 10px;
 }
 
-.img ul li a{
+
+.tab-item ul li .item{
     display: block;
+    overflow: hidden;
+}
+
+.tab-item ul li .item .item-left{
     float: left;
     text-decoration: none;
+}
+
+.tab-item ul li .item .item-right{
+    float: left;
+    margin-left: 10px;
+}
+
+.tab-item ul li .item strong{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100px;
 }
