@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box{
+            width: 100%;
+        }
+        
+        .box .inner{
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+        /* 1300px 이상에서 동작하는 디자인 */
+        @media(min-width: 1300px){
+            .box .inner{
+                float: left;
+                width: 33.3333%;
+                border: 1px solid #777;
+                box-sizing: border-box;
+            }
+        }
+
+        /* 768~1299 에서 동작하는 디자인 */
+        @media(max-width: 1299px) and (min-width: 768px){
+            .box .inner{
+                float: left; 
+                width: 50%;
+            }
+        }
+
+        /* 767px 아래에서 동작하는 디자인 */
+        @media (max-width: 767px){
+            .box .inner{
+                float: left;
+                width: 50%;
+                border: 1px solid #777;
+                box-sizing: border-box;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h3>반응형 디자인 media</h3>
+
+    <div class="box">
+
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+
+    </div>
+
+</body>
+</html>

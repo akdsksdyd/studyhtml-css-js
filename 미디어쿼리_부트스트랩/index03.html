@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- css링크 -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+     <!-- jQuery링크 -->
+     <script src="jQuery/jquery-3.6.3.min.js"></script>
+ 
+     <!-- 부트스트랩 테마가 필요하면 이쯤 추가하기 -->
+ 
+     <!-- js링크 -->
+     <script src="js/bootstrap.min.js"></script>
+
+     <style>
+
+        .mygrid{
+            border: 1px solid #777;
+            margin: 0 auto;
+            float: none;
+            box-shadow: rgba(0,0,0,0.4);
+            /* 
+            부트스트랩의 col-클래스가 float 영향이 있어서
+            1개의 박스를 가운데로 보낼때만 float 을 해제하고, margin; 0 auto;
+            */
+            padding: 20px 10px;
+        }
+
+     </style>
+
+</head>
+<body>
+    
+    <h3>그리드 커스터마이징</h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 mygrid">
+                <form>
+                    <div class="form-group mygrid">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group mygrid">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="checkbox mygrid">
+                      <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="button" class="btn btn-info">Button</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
