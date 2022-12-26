@@ -9,6 +9,7 @@ img{max-width: 100%; height: auto;}
 
 #header .wrap{
     border-bottom: 1px solid #999;
+    overflow: hidden;
 }
 
 #header .wrap .top{
@@ -261,12 +262,67 @@ img{max-width: 100%; height: auto;}
     margin-top: 20px;
 }
 
-.issue h4{
+#section .wrap .issue h4{
     border-bottom: 1px solid #999;
     padding: 5px 0;
 }
 
 .issue h4 span{
-    font-size: 9px;
+    font-size: 12px;
     color: #999;
+}
+
+#section .wrap .issue{
+    width: 708px;
+    float: left;
+}
+
+#section .wrap .issue .issue_img{
+    overflow: hidden;
+}
+
+#section .wrap .issue .issue_img li{
+    display: inline;
+    float: left;
+    width: 223px;
+    margin: 13px 0 0 13px;
+}
+
+#section .wrap .issue ul li a{
+    display: inline-block;
+    padding: 10px;
+}
+
+#section .wrap .chart{
+    width: 280px;
+    float: left;
+}
+
+#section .wrap .issue .issue_img .inner span{
+    display: block;
+}
+
+#section .wrap .issue .issue_img .inner .title{
+    font-size: 15px;
+    color: #000;
+}
+
+#section .wrap .issue .issue_img .inner .cont{
+    font-size: 11px;
+    color: #999;
+}
+
+#section .wrap .issue .issue_img .inner .hit{
+    font-size: 11px;
+    color: #00d344;
+}
+
+#section .wrap .issue .issue_img .inner .hit span{
+    display: inline-block;
+    color: #999;
+    margin-left: 5px;
+}
+
+#section .wrap .issue .issue_img .li.m0{/* 붙여서 사용 가능 */
+    margin-left: 0;
 }
