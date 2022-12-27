@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box{background-color: yellow; padding: 10px; height: 500px;}
+        .box .item{background-color: green; width: 50px; height: 50px; margin: 10px;}
+
+        .container{
+            display: flex;
+        }
+        /* grow, shrink 컨테이너 사이즈가 변할 때, 아이템이 증가되거나, 감소되는 비율(속도) */
+        .item1{
+            /* flex-grow: 2;  */
+            /* flex-shrink: 2; */
+            /* flex-basis: 33.3333%; */
+            flex: 2 2 33.3333%;
+            order: 10;
+        }
+        .item2{
+            /* flex-grow: 1;  */
+            /* flex-shrink: 1; */
+            /* flex-basis: 33.3333%; */
+            flex: 1 1 33.3333%;
+        }
+        .item3{
+            /* flex-grow: 0;  */
+            /* flex-shrink: 0; */
+            /* flex-basis: 33.3333%; */
+            flex: 0 0 33.3333%;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h3>item에 적용하는 속성들</h3>
+    
+    <div class="container box">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+
+</body>
+</html>

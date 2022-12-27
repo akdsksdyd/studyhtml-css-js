@@ -1,6 +1,8 @@
 
 *{padding: 0; margin: 0; box-sizing: border-box;}
 
+body{font-size: 14px; line-height: 1.42857143; color: #333;}
+
 img{max-width: 100%; height: auto;}
 
 section{margin: 0 auto;}
@@ -96,13 +98,14 @@ hr{
 }
 .reply-group{
     overflow: hidden;
-    padding-top: 10px;
 }
+.reply-submit{padding-top: 10px;}
 .reply-group .reply-input{
     float: left;
 }
-.reply-group .reply-input .form-control{
-    padding-bottom: 5px;
+.reply-content .form-control{
+    margin-bottom: 5px;
+    border-radius: 0;
 }
 .reply-group .btn-submit{
     float: right;
@@ -114,4 +117,28 @@ hr{
     font-weight: normal;
     vertical-align: middle;
     text-align: center;
+}
+.reply-name{float: left;}
+.reply-name p{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+.reply-group .delete-modify{
+    float: right;
+}
+.reply-group a{
+    color: #777;
+    text-decoration: none;
+}
+.reply-group a:hover{color: #46b8da;}
+.reply-group small{
+    margin-left: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.replyarea{
+    font-size: 13px;
+    font-weight: 500;
 }
